@@ -1,0 +1,62 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js eventos</title>
+</head>
+<body>
+
+     <form>
+     	
+
+         <input type="text" id="nombre" name="nombre_" placeholder="Ingrese nombre: ">  
+              <br><br>
+
+         <label class="miro-radiobutton">
+            
+            <label>Inque Sexo:</label>
+
+               <br><br>
+
+		    <input type="radio" value="0" name="radio" checked>
+		    <span>Femenino</span>
+
+		    <input type="radio" value="0" name="radio" checked>
+            <span>Masculino</span>
+
+            <input type="radio" value="0" name="radio" checked>
+            <span>Otro</span>
+
+		</label>
+
+
+         
+         <br><br>
+
+         <input type="submit" onclick=" saludo(nombre); ">
+
+
+     </form>
+
+
+  <script type="text/javascript">
+
+  
+      function saludoCortesia(){
+
+      	  var nombre = document. getElementById('nombre').value;
+
+          alert("Hola " + nombre);
+      }
+
+  </script>
+
+
+
+
+</body>
+</html>
+
+
