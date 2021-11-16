@@ -38,25 +38,23 @@ $( document ).ready(function() { //Etiqueta por defecto
 
  }//Jquery
 
- //------------------------------
-
-Funciones mas importantes en Jquery
-
-toggleClass() =  Inserta contenido al comienzo de los elementos seleccionados
-css() 
-remove()
-attr()
+ //---------------------------------------------------------------
+               Funciones mas importantes en Jquery
+ //---------------------------------------------------------------
 
 append() - Inserta contenido al final de los elementos seleccionados
 prepend() - Inserta contenido al comienzo de los elementos seleccionados
 after() - Inserta contenido después de los elementos seleccionados
 before() - Inserta contenido antes de los elementos seleccionados  
 
-ejemplo: 
 
-    $('.h1-titulo').remove(); 
+ejemplo:  ('.h1-titulo') es el nombre de la clase!
 
-     $('.h1-titulo').prepend("Estoy agregando contenido al principio <br>"); 
+    $('.h1-titulo').remove(); // Elimino desde el jQuery
+
+    $('.h1-titulo').empty(); //Elimina los elementos secundarios del elemento seleccionado 
+
+    $('.h1-titulo').prepend("Estoy agregando contenido al principio <br>"); 
    
     $('.h1-titulo').append(" <br> Estoy agregando el contenido al final");
      
@@ -64,3 +62,9 @@ ejemplo:
     
     $('.h1-titulo').before(" <br> Estoy agregando contenido por arriba de la clase seleccionada"); 
      
+
+
+addClass() - Agrega una o más clases a los elementos seleccionados
+removeClass() - Elimina una o más clases de los elementos seleccionados
+toggleClass() - Alterna entre agregar / eliminar clases de los elementos seleccionados
+css() - Establece o devuelve el atributo de estilo.
