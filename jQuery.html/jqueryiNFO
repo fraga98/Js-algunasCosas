@@ -63,8 +63,10 @@ ejemplo:  ('.h1-titulo') es el nombre de la clase!
     $('.h1-titulo').before(" <br> Estoy agregando contenido por arriba de la clase seleccionada"); 
      
 
-
 addClass() - Agrega una o más clases a los elementos seleccionados
 removeClass() - Elimina una o más clases de los elementos seleccionados
 toggleClass() - Alterna entre agregar / eliminar clases de los elementos seleccionados
 css() - Establece o devuelve el atributo de estilo.
+
+
+.click - vincule un controlador de eventos al evento de JavaScript "clic" o active ese evento en un elemento.

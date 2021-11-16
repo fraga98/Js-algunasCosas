@@ -28,11 +28,19 @@ $( document ).ready(function() { //Etiqueta por defecto
 
        // $('.h1-titulo').empty();
 
+ }); //cierre del jQuery
 
-    //Otras funciones de la biclioteca Jquery
 
-     $('h1 h2').addClass('clase-general-ambos');
-     
-     $('.clase-general-ambos').css("color:red;");
+//--
 
- }) //cierre del jQuery
+$( document ).ready(function() {
+
+   $('button').click( function() { //boton
+  
+   $("label, p").addClass('clase-p-label'); 
+
+      alert('El contenido se modifico de color');
+   });
+   
+
+});
