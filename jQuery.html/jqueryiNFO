@@ -16,11 +16,9 @@
 
   $( document ).ready(function() {
         
-
-      $('h1').html('Estoy modificando el valor 1, con Jquery - desde el ATRIBUTO');
   }
   
- ACLARACION: Dentro de dicha etiqueta agregar siempre el signo $
+ ACLARACION: Dentro de dicha etiqueta agregar siempre el signo " $ "
 
 //-----------------------------
 
@@ -42,10 +40,27 @@ $( document ).ready(function() { //Etiqueta por defecto
 
  //------------------------------
 
- Funciones mas importantes en Jquery
+Funciones mas importantes en Jquery
 
- append()
- toggleClass()
- css()
- remove()
- attr()
+toggleClass() =  Inserta contenido al comienzo de los elementos seleccionados
+css() 
+remove()
+attr()
+
+append() - Inserta contenido al final de los elementos seleccionados
+prepend() - Inserta contenido al comienzo de los elementos seleccionados
+after() - Inserta contenido después de los elementos seleccionados
+before() - Inserta contenido antes de los elementos seleccionados  
+
+ejemplo: 
+
+    $('.h1-titulo').remove(); 
+
+     $('.h1-titulo').prepend("Estoy agregando contenido al principio <br>"); 
+   
+    $('.h1-titulo').append(" <br> Estoy agregando el contenido al final");
+     
+    $('.h1-titulo').after(" <br> Estoy agregando contenido de bajo de la clase seleccionada");
+    
+    $('.h1-titulo').before(" <br> Estoy agregando contenido por arriba de la clase seleccionada"); 
+     
