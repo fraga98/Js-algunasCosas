@@ -16,7 +16,9 @@
 	<style type="text/css"> 
 
 	    h1{font-size: 20px; color: blue;} 
-	    .clase-p-label{color: red;}
+	    .clase-p-label{color: red; font-size: 20px;}
+        .clase2-p-label{ color: black; font-size: 20px;};
+	    }
 
     </style>
 
@@ -38,9 +40,26 @@
 
      <br><br>
 
-   <button>Cambiar de color al contenido</button>  
-   <button>Volver al contenido anterior</button>
+   <button id="boton-1">Cambiar de color al contenido</button>  
+   <button id="boton-2">Volver al contenido anterior</button>
    
+   
+ <!--AJAX--->
+
+   <hr>
+   
+ <form method="POST"> 
+
+    <input type="text" id="numero" name="numero_">
+    <label for="numero">Numero</label>
+
+      <br><br>
+    
+    <input type="submit" id="enviar" name="enviar_">  
+
+ </form>
+
+
 
 </body>
 </html>

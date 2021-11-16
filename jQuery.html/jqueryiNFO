@@ -70,3 +70,14 @@ css() - Establece o devuelve el atributo de estilo.
 
 
 .click - vincule un controlador de eventos al evento de JavaScript "clic" o active ese evento en un elemento.
+
+
+
+//-------------------AJAX -------------------
+
+
+Url: indica la url donde enviaremos la petición.
+Type: especifica el tipo de petición (GET o POST).
+Data: datos que enviamos junto a la petición. Por ejemplo si el tipo es ‘get’, es equivalente a los parámetros que le pasaríamos a la url (?nombre=Luis&apellidos=lopez).
+DataType: tipo de datos que esperamos en la repuesta del servidor (XML, HTML, JSON, SCRIPT).
+Async: Para elegir s queremos una petición síncrona o asíncrona.

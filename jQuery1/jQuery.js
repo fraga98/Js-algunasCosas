@@ -31,16 +31,45 @@ $( document ).ready(function() { //Etiqueta por defecto
  }); //cierre del jQuery
 
 
-//--
+/*-//----------------------------------------------------------------
+Ejemplo 2
+-----------------------------------------------------------------//*/
+
+
+//--Le doy la posibilidad al usuario de que me cambie el color
 
 $( document ).ready(function() {
 
-   $('button').click( function() { //boton
+   $('#boton-1').click( function() { //boton
   
    $("label, p").addClass('clase-p-label'); 
 
       alert('El contenido se modifico de color');
    });
    
+});
+
+$ ( document ).ready(function() {
+
+    $('#boton-2').click( function() { 
+
+       $("label , p").addClass('clase2-p-label');
+
+       $('clase2-p-label').load("textoCuakquiera.txt");
+
+    });
+
+});
+
+//-----------------------BOTON CON AJAX
+
+$ ( document ).ready(function() {
+    
+    $('#enviar').click(function(){
+    	
+         alert("Hola");
+
+    });
+    
 
 });
