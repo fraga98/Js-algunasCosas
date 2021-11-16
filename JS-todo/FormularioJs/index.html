@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Js todo</title>
+    
+    <style type="text/css">
+
+    	 form{display: block; text-align: center;}
+    	  
+    	 .input1{text-align: center; width: 300px; height: 40px; font-size: 18px;}
+
+    	 .boton-input{width: 300px; height: 40px; margin-top: 50px;}
+
+    	 .titulo-label-form{font-size: 30px;}
+
+    </style>
+
+</head>
+<body> 
+
+<h1>Prueba</h1>
+
+<!---->
+
+    <form>
+
+        <input class="input1" type="text" id="nombre" name="nombre_" placeholder="Ingrese nombre">
+     	    
+     	   <br><br>
+
+     	<label class="titulo-label-form">Ingrese sexo</label><br><br>
+                     
+        <label>
+            
+            <input type="checkbox" id="femenino" name="femenino_" value="1" class="checkbox">
+		    <label for="femenino">Femenino</label>
+
+		    <input type="checkbox" id="masculino" name="femenino_" value="1" class="checkbox">
+		    <label for="masculino">Masculino</label>
+
+            <input type="checkbox" id="otro" name="femenino_" value="1" class="checkbox">
+		    <label for="otro">Otro</label>
+
+		    <!--El for dentro del label (lleva el mismo nombre que se encuentra en el id). En el momento de seleccionar puedo tocar el box o el nombre del label-->
+
+		</label>
+          
+     	   <br><br>
+         
+        <input class="boton-input" type="submit" onclick="saludarAlUsuario()" placeholder="Ingrese nombre"> 
+
+    </form>
+
+  
+  <script type="text/javascript">
+    
+    function saludarAlUsuario(){
+     
+      //es como recibir por Get o Post, pero en js se obtiene el valor con document.getElementById
+
+      var nombre = document.getElementById('nombre').value;
+      var femenino = document.getElementById('femenino').checked;
+      var masculino = document.getElementById('masculino').checked;
+      var otro = document.getElementById('otro').checked;
+
+      if(nombre != ""){  
+
+           //valido sexo 
+
+           if(femenino!=""){
+
+              alert('Buenos dias Sra: ' + nombre);
+       
+           }else if(masculino!=""){
+
+           	  alert('Buenos dias Sr: ' + nombre);
+
+           }else if( otro!=""){
+
+               alert('Buenos dias Sr/Sra: ' + nombre);
+
+           }else{
+               alert('Campo sexo vacio');
+           }
+
+       }else{
+         
+         alert("Campo nombre o sexo vacio");
+
+       }
+
+    }//function
+    
+
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
