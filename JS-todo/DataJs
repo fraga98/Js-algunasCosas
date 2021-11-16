@@ -1,0 +1,20 @@
+
+
+////////////////////////////////////////////////////////////////////////
+                       document.querySelector('#boton')
+///////////////////////////////////////////////////////////////////////
+
+
+/*El querySelector puede seeccionar cualquier elemento de mi html (y lo selecciona a tra vez de un id o de una clase), como en css
+  
+  document.querySelector('#boton') ---- #cuando hace referencia al id
+
+  document.querySelector('.boton') ---- .cuando hace referencia a una clase
+
+*/
+
+document.querySelector('#boton').addEventListener('click', function(){
+    
+    alert("Hola santiago");
+
+})
